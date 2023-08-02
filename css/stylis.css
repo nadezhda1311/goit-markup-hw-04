@@ -152,6 +152,14 @@ button {
   background-color: var(--navyblue, #2e2f42);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .heder-title {
   color: var(--white, #fff);
@@ -213,6 +221,16 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.advantages-item-top {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
 }
 
 /*--------------BOING--------------*/
@@ -289,6 +307,45 @@ button {
   text-align: center;
 }
 
+/**-----------------besteleng--------------*/
+
+.besteleng {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.besteleng-title {
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+  /* Header 2 */
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.besteleng-item {
+  width: calc((100% - 72px) / 6);
+}
+.besteleng-item-top {
+  width: 168px;
+  height: 88px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
+}
+.besteleng-item-top-wrap {
+  width: 168px;
+  height: 88px;
+  flex-shrink: 0;
+  display: inline-flex;
+  padding: 9px 9px 6px 11px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
+}
 /**-----------------FOOTER-----------------*/
 
 .footer {
@@ -326,7 +383,44 @@ button {
   letter-spacing: 0.02em;
   width: 264px;
 }
-
+.footer-item-title {
+  color: var(--white, #fff);
+  /* Body Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(76, 76, 76, 0.596);
+  top: 0;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background: var(--dairy, #fcfcfc);
+}
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  fill: var(--cornflower, #e7e9fc);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 /***------------PORTFOLIO-------------*/
 
 /**-----------------GALERY-----------*/
@@ -385,12 +479,37 @@ button {
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
 }
+.galery-list-item:hover .galery-cover {
+  transform: translateY(0);
+}
 .galery-title-link {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-.galery-title-photo {
+.galery-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.galery-cover {
+  position: absolute;
+  top: 0;
+  width: 360px;
+  height: 300px;
+  flex-shrink: 0;
+  background: var(--iris, #4d5ae5);
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
+.galery-cover-text {
+  color: var(--cloud, #f4f4fd);
+  /* Body */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .section-galery-title {
   color: var(--navyblue, #2e2f42);
