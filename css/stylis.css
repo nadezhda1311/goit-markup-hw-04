@@ -107,6 +107,7 @@ button {
 .header-menu-list {
   display: flex;
   gap: 40px;
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-item {
   padding: 24px 0;
@@ -123,6 +124,7 @@ button {
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
+  position: relative;
   color: var(--ocean, #404bbf);
 }
 
@@ -146,6 +148,16 @@ button {
 .header-soc-link:focus {
   color: var(--ocean, #0015ff);
 }
+::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /**----------------heder-------------*/
 .heder {
@@ -157,6 +169,7 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -187,6 +200,7 @@ button {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heder-btn:hover,
 .heder-btn:focus {
@@ -231,6 +245,7 @@ button {
   justify-content: center;
   border-radius: 4px;
   background: var(--cloud, #f4f4fd);
+  margin-bottom: 8px;
 }
 
 /*--------------BOING--------------*/
@@ -363,8 +378,13 @@ button {
   justify-content: center;
   border-radius: 4px;
   border: 1px solid var(--lightslate, #8e8f99);
+  color: #8e8f99;
+  border-color: 250 ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.besteleng-item-top:hover,
+.besteleng-item-top:hover {
+  border-color: #404bbf;
+  color: #404bbf;
+}
 .besteleng-item-top:focus {
   border-color: #404bbf;
   color: #404bbf;
@@ -468,6 +488,9 @@ button {
   height: 100%;
   background-color: rgba(76, 76, 76, 0.596);
   top: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
@@ -478,14 +501,38 @@ button {
   min-height: 584px;
   border-radius: 4px;
   background: var(--dairy, #fcfcfc);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0.02;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
-  fill: var(--cornflower, #e7e9fc);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: #ffffff;
 }
 .is-hidden {
   opacity: 0;
