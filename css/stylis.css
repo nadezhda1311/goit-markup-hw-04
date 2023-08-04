@@ -156,7 +156,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office-1.jpg);
+    url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -287,7 +287,7 @@ button {
 .team-list-section {
   padding: 32px 0;
   text-align: center;
-}
+  }
 .team-our-title {
   color: var(--navyblue, #2e2f42);
   /* Header 3 */
@@ -305,8 +305,14 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
-
+.team-icons-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 /**-----------------besteleng--------------*/
 
 .besteleng {
@@ -390,6 +396,25 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.footer-tekst{
+  color: var(--white, #FFF);
+/* Body Medium */
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.02em;
+display: flex;
+}
+.footer-icon{
+  display: flex;
+  margin-bottom: 16px;
+}
+.footer-icons-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 .backdrop {
   position: fixed;
