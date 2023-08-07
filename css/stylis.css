@@ -77,11 +77,10 @@ button {
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1.008;
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
-  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-navigation {
   display: flex;
@@ -111,12 +110,12 @@ button {
 .header-menu-list {
   display: flex;
   gap: 40px;
-  position: relative;
-  color: #404bbf;
-  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: space-between;
+  align-items: center;
 }
 .header-menu-item {
   padding: 24px 0;
+  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-link {
   color: var(--navyblue, #2e2f42);
@@ -173,9 +172,11 @@ button {
 
 /**----------------heder-------------*/
 .heder {
-  background-color: var(--navyblue, #2e2f42);
+  background-color: var(--navy-blue, #2e2f42);
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: 0 auto;
+  color: var(--white-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -529,7 +530,7 @@ button {
   border-radius: 4px;
   background: var(--dairy, #fcfcfc);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.02);
+    0px 2px 1px 0, 0.2;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
