@@ -158,7 +158,7 @@ button {
 .header-soc-link:focus {
   color: var(--ocean, #0015ff);
 }
-::after {
+.curren::after {
   content: "";
   position: absolute;
   left: 0;
@@ -166,6 +166,10 @@ button {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+  width: 100%;
+}
+.curren {
+  position: relative;
 }
 
 /**----------------heder-------------*/
@@ -177,8 +181,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
-  max-width: 1440px;
+    url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -333,18 +336,17 @@ button {
   text-align: center;
   margin-bottom: 8px;
 }
-.team-icon-top {
-  display: flex;
-  justify-content: center;
-}
 .team-list-top {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
+
 .team-item-icon {
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: baseline;
 }
 .team-icons-wrap {
   width: 100%;
@@ -354,6 +356,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icons-wrap:hover,
 .team-icons-wrap:focus {
@@ -408,7 +411,6 @@ button {
   color: #404bbf;
 }
 .besteleng-icon {
-  fill: currentColor;
 }
 
 /**-----------------FOOTER-----------------*/
@@ -418,6 +420,7 @@ button {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .footer-logo-wrap {
   margin-right: 120px;
 }
@@ -459,9 +462,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.footer-icons {
-  margin-right: 120px;
-}
+
 .footer-text {
   color: var(--white, #fff);
   /* Body Medium */
@@ -472,8 +473,7 @@ button {
   margin-bottom: 16px;
 }
 .footer-icon {
-  display: flex;
-  align-items: baseline;
+  margin-right: 120px;
 }
 
 .footer-icons-list {
@@ -485,8 +485,8 @@ button {
   height: 40px;
 }
 .footer-icons-link {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
