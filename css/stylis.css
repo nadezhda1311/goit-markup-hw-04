@@ -177,7 +177,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office1.jpg);
+    url(../images/people-office\ 1.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -334,9 +334,18 @@ button {
   margin-bottom: 8px;
 }
 .team-icon-top {
+  /* display: flex;
+  justify-content: center;
+  gap: 24px;*/
+}
+.team-list-top {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+.team-item-icon {
+  width: 40px;
+  height: 40px;
 }
 .team-icons-wrap {
   width: 100%;
@@ -514,7 +523,7 @@ button {
   border-radius: 4px;
   background: var(--dairy, #fcfcfc);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0.02;
+    0px 2px 1px rgba(0, 0, 0, 0.02);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
