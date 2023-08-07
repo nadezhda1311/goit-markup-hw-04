@@ -81,6 +81,7 @@ button {
 }
 .header-container {
   display: flex;
+  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-navigation {
   display: flex;
@@ -97,7 +98,6 @@ button {
   max-width: 44px 70px;
   margin-right: 76px;
   position: relative;
-  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-logo-color {
   color: var(--navyblue, #2e2f42);
@@ -111,9 +111,9 @@ button {
 .header-menu-list {
   display: flex;
   gap: 40px;
-  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   color: #404bbf;
+  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-item {
   padding: 24px 0;
@@ -127,6 +127,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
   padding: 24px 0;
+  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -422,6 +423,7 @@ button {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-wrap {
@@ -477,7 +479,6 @@ button {
 }
 .footer-icon {
   margin-right: 120px;
-  align-items: baseline;
 }
 
 .footer-icons-list {
@@ -527,11 +528,8 @@ button {
   min-height: 584px;
   border-radius: 4px;
   background: var(--dairy, #fcfcfc);
-  box-shadow: (
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0.02
-  );
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.02);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
@@ -586,6 +584,13 @@ button {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.galery-btn-item:hover,
+.galery-btn-item:focus {
+  box-sizing: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    2px rgba(0, 0, 0, 0.12);
+  box-sizing: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px rgba(0, 0, 0, 0.12);
+}
 .btn-item {
   color: var(--iris, #4d5ae5);
   /* Button Text */
@@ -609,8 +614,6 @@ button {
   color: var(--white, #fff);
   background: var(--ocean, #404bbf);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px rgba(0, 0, 0, 0.12);
 }
 
 .galery-list {
