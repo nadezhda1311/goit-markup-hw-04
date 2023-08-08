@@ -577,14 +577,7 @@ button {
   justify-content: center;
   margin-bottom: 72px;
 }
-.galery-btn-item:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 2px 1px rgba(0, 0, 0, 0.08) 2px rgba(0, 0, 0, 0.12);
-}
-.galery-btn-item:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px rgba(0, 0, 0, 0.12);
-}
+
 .btn-item {
   color: var(--iris, #4d5ae5);
   /* Button Text */
@@ -625,8 +618,9 @@ button {
   background: var(--white, #fff);
 }
 .galery-list:hover,
-.galery-cover-text,
+.galery-cover-text:hover,
 .galery-list:focus {
+  transform: translateY(0%);
 }
 .galery-list-item {
   width: calc((100% - 48px) / 3);
