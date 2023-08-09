@@ -595,18 +595,18 @@ button {
   border-radius: 4px;
   border: 1px solid #e7e9fc;
   background: var(--cloud, #f4f4fd);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-item:hover,
 .btn-item:focus {
   color: var(--white, #fff);
   background: var(--ocean, #404bbf);
   border: 1px solid transparent;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .galery-list {
   display: flex;
@@ -615,9 +615,6 @@ button {
   column-gap: 24px;
   row-gap: 48px;
   background: var(--white, #fff);
-}
-.galery-list:hover,
-.galery-list:focus {
 }
 .galery-list-item {
   width: calc((100% - 48px) / 3);
@@ -629,16 +626,16 @@ button {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.galery-title:hover,
+/*.galery-title:hover,
 .galery-title:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
+}*/
 .galery-title:hover,
+.galery-cover-text,
 .galery-title:focus,
-.galery-cover-text:hover,
-.galery-cover-text:focus {
+.galery-cover-text {
   transform: translateY(0%);
 }
 .galery-title-link {
