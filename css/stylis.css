@@ -387,31 +387,35 @@ button {
 }
 .besteleng-item {
   width: calc((100% - 120px) / 6);
+  width: 168px;
   height: 88px;
 }
 .besteleng-item-top {
-  width: 168px;
-  height: 88px;
+  padding: 16px 32px;
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   border: 1px solid var(--lightslate, #8e8f99);
-  color: #8e8f99;
+  color: var(--lightslate);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.besteleng-item-top:hover {
-  border-color: #404bbf;
-  color: #404bbf;
+.besteleng-icon {
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.besteleng-item-top:hover,
 .besteleng-item-top:focus {
   border-color: #404bbf;
   color: #404bbf;
 }
-.besteleng-icon {
-  fill: currentColor;
+.besteleng-item-top:hover .besteleng-icon {
+  color: #404bbf;
 }
 
 /**-----------------FOOTER-----------------*/
